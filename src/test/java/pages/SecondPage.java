@@ -186,10 +186,6 @@ public class SecondPage extends LocalHelper {
 	private WebElement FiveZeroZeroHyperLink;
 	@FindBy(xpath = "//a[@href='redirect']")
 	private WebElement clickHereRedirectLink;
-<<<<<<< HEAD
-=======
-	
->>>>>>> 4e00a2fab026638bb7e383a7be45640969f2d2a2
 	public void clickWhereAmIButton() {
 		clickElement(whereAmIButton, driver);
 	}
@@ -600,17 +596,9 @@ public class SecondPage extends LocalHelper {
 		logger.info("500 url is :"+fullUrl.get(0));
 		return hitParticularAPIUsingInbuiltJava(fullUrl.get(0))==statusCode;
 	}
-<<<<<<< HEAD
-
 	public void clickClickHereRedirectLinkbutton() {
 		clickElement(clickHereRedirectLink, driver);
 	}
-
-=======
-	public void clickClickHereRedirectLinkbutton() {
-		clickElement(clickHereRedirectLink, driver);
-	}
->>>>>>> 4e00a2fab026638bb7e383a7be45640969f2d2a2
 	public boolean verifyURLAfterRedirectClick(String text) {
 		return verifyUrlContainsExpectedText(text, driver);
 	}

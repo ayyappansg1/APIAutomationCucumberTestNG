@@ -63,7 +63,7 @@ public class Hooks {
 			String screenshot = CommonUtils.screenshot(scenario.getName());
 			FileInputStream stream = new FileInputStream(new File(screenshot));
 			Allure.addAttachment("Screenshot", stream);
-			byte[] screenshotAsByte = CommonUtils.screenshotAsByte();
+			byte[] screenshotAsByte = CommonUtils.screenshotAsByte(DriverManager.getDriver());
 			String base64Screenshot = Base64.getEncoder().encodeToString(screenshotAsByte);
 			scenario.attach(screenshotAsByte, "image/png", screenshot);
             test.addScreenCaptureFromPath(screenshot, "Failure Screenshot");
