@@ -26,14 +26,6 @@ public class ExtentReportListener extends TestListenerAdapter{
     public void onTestFailure(ITestResult result){
     	failedTests++;
         test.log(Status.FAIL, "Test failed");
-//        String screenshot = null;
-//		try {
-//			screenshot = CommonUtils.screenshot(result.getName());
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//        test.addScreenCaptureFromPath(screenshot,"This is listener Bro");
     }
     public static ExtentTest getTest() {
     	return test;

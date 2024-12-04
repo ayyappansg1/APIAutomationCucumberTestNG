@@ -1,8 +1,7 @@
 package constants;
 
 public class Constants {
-	public static String application_url;
-	public static String browserName;
-	
-
+	public static String baseURI;
+	public static String userName;
+	public static String password;
 }
